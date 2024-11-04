@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>داستان ما</title>
+  <link href="https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>  
+<body>
+  <div class="container">
+
+    <!-- اضافه کردن لوگو -->
+    <div class="logo-container" style="text-align: center; margin-bottom: 20px;">
+      <img src="images/logo.png" alt="Albumi Logo" style="max-width: 200px; height: auto;">
+    </div>
+
+    <!-- ناوبری -->
+    <nav>
+      <ul>
+        <li><a href="index.html">صفحه اصلی</a></li>
+        <li><a href="about.html">داستان ما</a></li>
+        <li><a href="team.html">تیم ما</a></li>
+        <li><a href="faq.html">پرسش‌های متداول</a></li>
+        <li><a href="contact.html">تماس با ما</a></li>
+        <!-- دکمه‌های ورود و ثبت نام -->
+        <button class="login-button" onclick="window.location.href='login.html'">ورود / ثبت نام</button>
+    </nav>
+    <!-- بخش داستان ما -->
+<section id="story">
+  <h2>داستان ما</h2>
+  <p>اینجا قصه آلبومی رو براتون تعریف کردیم تا با داستان ما آشنا بشید</p>
+
+  <!-- قصه‌های داستان ما -->
+  <div class="story-container">
+    <div class="story">
+      <h3>قصه اول: ریشه‌های ما</h3>
+      <p>همه‌چیز از هنروما شروع شد؛ استودیویی که همیشه به دنبال خلاقیت و نوآوری بوده است. در دل این خانه هنری، ایده‌ای برای ثبت لحظات ماندگار به ذهن ما رسید. جایی که لحظات ناب زندگی باید به زیباترین شکل ثبت شوند.</p>
+    </div>
+
+    <div class="story">
+      <h3>قصه دوم: لحظه‌ای که جرقه زد</h3>
+      <p>وقتی رضا، مدیر محصول ما، صاحب فرزند شد، به دنبال راهی بود تا خاطرات نوزادش را به شکلی ماندگار ثبت کند. رفت‌وآمد به آتلیه‌ها سخت و پرهزینه بود، و اینجا بود که ایده آلبومین جرقه زد؛ یک راه ساده‌تر و خلاقانه برای والدین.</p>
+    </div>
+
+    <div class="story">
+      <h3>قصه سوم: دغدغه‌ای مشترک</h3>
+      <p>بعد از صحبت با پدر و مادرهای دیگر، رضا فهمید که این دغدغه تنها او نیست. همه به دنبال ثبت لحظات بودند، اما راهی ساده و خلاقانه لازم بود. این‌گونه آلبومین متولد شد؛ پلتفرمی برای تبدیل عکس‌های ساده به آلبوم‌های داستانی، بدون نیاز به آتلیه.</p>
+    </div>
+  </div>
+</section>
+    <footer>
+      <div class="footer-container">
+        <!-- اطلاعات تماس -->
+        <div class="footer-section">
+          <h4>تماس با ما</h4>
+          <p>تلفن: ۰۹۳۹۴۵۴۹۳۹۱</p>
+          <p>ایمیل: <a href="mailto:s.r.mohtasebi@gmail.com">s.r.mohtasebi@gmail.com</a></p>
+          <p>آدرس: تهران، خیابان سنایی، خیابان جواد زاده، پلاک ۳</p>
+        </div>
+    
+        <!-- لینک‌های مفید -->
+        <div class="footer-section">
+          <h4>لینک‌های مفید</h4>
+          <ul>
+            <li><a href="about.html">درباره ما</a></li>
+            <li><a href="contact.html">تماس با ما</a></li>
+            <li><a href="faq.html">پرسش‌های متداول</a></li>
+            <li><a href="terms.html">شرایط و قوانین</a></li>
+            <li><a href="privacy.html">حریم خصوصی</a></li>
+          </ul>
+        </div>
+    
+        <!-- شبکه‌های اجتماعی -->
+        <div class="footer-section">
+          <h4>شبکه‌های اجتماعی</h4>
+          <a href="https://instagram.com">اینستاگرام</a> |
+          <a href="https://telegram.me">تلگرام</a> |
+          <a href="https://wa.me">واتساپ</a>
+        </div>
+      </div>
+      <div class="logo-container" style="text-align: center; margin-top: 20px;">
+        <img src="images/logo.png" alt="Albumi Logo" style="max-width: 150px; height: auto;">
+      </div>
+      <!-- حقوق محفوظ -->
+      <div class="footer-bottom">
+        <p>تمام حقوق محفوظ است. © ۲۰۲۴ [ر+مرت+ضا]</p>
+      </div>
+    
+    
+      
+    </footer>
+  </div>
+
+  <!-- اسکریپت برای مدیریت باز و بسته شدن سوالات -->
+  <script>
+    const faqQuestions = document.querySelectorAll('.faq-question');
+
+    faqQuestions.forEach(question => {
+      question.addEventListener('click', () => {
+        // باز و بسته شدن جواب
+        const answer = question.nextElementSibling;
+        if (answer.style.display === 'block') {
+          answer.style.display = 'none';
+        } else {
+          answer.style.display = 'block';
+        }
+
+        // تغییر آیکون فلش
+        const icon = question.querySelector('i');
+        icon.classList.toggle('fa-chevron-down');
+        icon.classList.toggle('fa-chevron-up');
+      });
+    });
+  </script>
+</body>
+</html>

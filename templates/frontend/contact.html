@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تماس با ما</title>
+  <link href="https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan.css" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <!-- استفاده از فونت آیکون برای آیکون‌های تماس -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    
+    <!-- اضافه کردن لوگو -->
+    <div class="logo-container" style="text-align: center; margin-bottom: 20px;">
+      <img src="images/logo.png" alt="Albumi Logo" style="max-width: 200px; height: auto;">
+    </div>
+
+    <!-- ناوبری -->
+    <nav>
+      <ul>
+        <li><a href="index.html">صفحه اصلی</a></li>
+        <li><a href="about.html">داستان ما</a></li>
+        <li><a href="team.html">تیم ما</a></li>
+        <li><a href="faq.html">پرسش‌های متداول</a></li>
+        <li><a href="contact.html">تماس با ما</a></li>
+        <!-- دکمه‌های ورود و ثبت نام -->
+        <button class="login-button" onclick="window.location.href='login.html'">ورود / ثبت نام</button>
+      </ul>
+    </nav>
+
+    <section id="contact">
+      <h2>تماس با ما</h2>
+      <!-- اطلاعات تماس -->
+      <div class="contact-info">
+        <div class="info-item">
+          <i class="fa fa-map-marker"></i> <!-- آیکون آدرس -->
+          <p><strong>آدرس:</strong> تهران، خیابان سنایی، جواد زاده هشتم غربی پلاک ۳</p>
+        </div>
+        <div class="info-item">
+          <i class="fa fa-phone"></i> <!-- آیکون تلفن -->
+          <p><strong>شماره تماس:</strong> ۰۹۳۹۴۵۴۹۳۹۱</p>
+        </div>
+        <div class="info-item">
+          <i class="fa fa-envelope"></i> <!-- آیکون ایمیل -->
+          <p><strong>ایمیل:</strong> <a href="mailto:s.r.mohtasebi@gmail.com">s.r.mohtasebi@gmail.com</a></p>
+        </div>
+      </div>
+
+      <!-- نقشه لوکیشن شرکت -->
+      <div class="map-container">
+        <h3>لوکیشن شرکت ما:</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.3480506421747!2d51.416656675964624!3d35.717657827971756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e0151ad85bea5%3A0xbfbbdf4c4e00c094!2z2YfZhtix2YjZhdin!5e0!3m2!1sen!2slu!4v1726748990856!5m2!1sen!2slu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+      
+    <footer>
+      <div class="footer-container">
+        <!-- اطلاعات تماس -->
+        <div class="footer-section">
+          <h4>تماس با ما</h4>
+          <p>تلفن: ۰۹۳۹۴۵۴۹۳۹۱</p>
+          <p>ایمیل: <a href="mailto:s.r.mohtasebi@gmail.com">s.r.mohtasebi@gmail.com</a></p>
+          <p>آدرس: تهران، خیابان سنایی، خیابان جواد زاده، پلاک ۳</p>
+        </div>
+    
+        <!-- لینک‌های مفید -->
+        <div class="footer-section">
+          <h4>لینک‌های مفید</h4>
+          <ul>
+            <li><a href="about.html">درباره ما</a></li>
+            <li><a href="contact.html">تماس با ما</a></li>
+            <li><a href="faq.html">پرسش‌های متداول</a></li>
+            <li><a href="terms.html">شرایط و قوانین</a></li>
+            <li><a href="privacy.html">حریم خصوصی</a></li>
+          </ul>
+        </div>
+    
+        <!-- شبکه‌های اجتماعی -->
+        <div class="footer-section">
+          <h4>شبکه‌های اجتماعی</h4>
+          <a href="https://instagram.com">اینستاگرام</a> |
+          <a href="https://telegram.me">تلگرام</a> |
+          <a href="https://wa.me">واتساپ</a>
+        </div>
+      </div>
+      <div class="logo-container" style="text-align: center; margin-top: 20px;">
+        <img src="images/logo.png" alt="Albumi Logo" style="max-width: 150px; height: auto;">
+      </div>
+      <!-- حقوق محفوظ -->
+      <div class="footer-bottom">
+        <p>تمام حقوق محفوظ است. © ۲۰۲۴ [ر+مرت+ضا]</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- لینک فایل جاوااسکریپت (اختیاری) -->
+  <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

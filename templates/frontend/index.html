@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>داستان نوزاد شما</title>
+  <link href="https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan.css" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+
+</head>
+<body>
+  <div class="container">
+    <div class="logo-container" style="text-align: center; margin-bottom: 20px;">
+      <img src="images/logo.png" alt="Albumi Logo" style="max-width: 200px; height: auto;">
+    </div>
+
+    <!-- ناوبری -->
+    <nav>
+      <ul>
+        <li><a href="index.html">صفحه اصلی</a></li>
+        <li><a href="about.html">داستان ما</a></li>
+        <li><a href="team.html">تیم ما</a></li>
+        <li><a href="team.html">نمونه محصولات</a></li>
+        <li><a href="faq.html">پرسش‌های متداول</a></li>
+        <li><a href="contact.html">تماس با ما</a></li>
+      </ul>
+    </nav>
+
+    <!-- محتوای اصلی سایت -->
+    <header>
+      <div class="slider-container">
+        <div class="slider large-slider">
+          <div class="slides fade">
+            <img src="images/hero1.png" alt="آلبوم نوزاد بزرگ 1" style="width:100%">
+          </div>
+          <div class="slides fade">
+            <img src="images/hero2.png" alt="آلبوم نوزاد بزرگ 2" style="width:100%">
+          </div>
+          <div class="slides fade">
+            <img src="images/baby_album_photo_large3.png" alt="آلبوم نوزاد بزرگ 3" style="width:100%">
+          </div>
+
+          <div class="dots-container">
+            <span class="dot" onclick="currentSlideLarge(1)"></span>
+            <span class="dot" onclick="currentSlideLarge(2)"></span>
+            <span class="dot" onclick="currentSlideLarge(3)"></span>
+          </div>
+        </div>
+
+        <div class="slider small-slider">
+          <div class="slides fade">
+            <img src="images/baby_album_photo1.png" alt="آلبوم نوزاد کوچک 1" style="width:100%">
+          </div>
+          <div class="slides fade">
+            <img src="images/baby_album_photo2.png" alt="آلبوم نوزاد کوچک 2" style="width:100%">
+          </div>
+          <div class="slides fade">
+            <img src="images/baby_album_photo3.png" alt="آلبوم نوزاد کوچک 3" style="width:100%">
+          </div>
+          <div class="slides fade">
+            <img src="images/baby_album_photo4.png" alt="آلبوم نوزاد کوچک 4" style="width:100%">
+          </div>
+          <div class="slides fade">
+            <img src="images/baby_album_photo5.png" alt="آلبوم نوزاد کوچک 5" style="width:100%">
+          </div>
+        </div>
+      </div>
+
+      <h1>هر آلبوم یک داستان متفاوت</h1>
+      <p>ما به شما کمک می‌کنیم تا لحظات خاص فرزندتان را با عشق ثبت کنید.</p>
+    </header>
+
+    <!-- تایم‌لاین افقی فرآیند -->
+    <section class="horizontal-timeline">
+      <h2>فرآیند سفارش شما</h2>
+      <div class="timeline-container">
+        <div class="timeline-item">
+          <div class="timeline-icon" data-step="۱"></div>
+          <div class="timeline-content">
+            <h3>تعریف ویژگی‌ پس زمینه</h3>
+            <p>طبق فرم پایین توضیح پس زمینه‌ای که دوست دارید رو تعریف کنید تا آلبومی دست به کار بشه.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-icon" data-step="۲"></div>
+          <div class="timeline-content">
+            <h3>انتخاب عکس پس زمینه </h3>
+            <p>از ۳ عکس پس زمینه تولید شده توسط هوش مصنوعی آلبومی یکی رو انتخاب کنید.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-icon" data-step="۳"></div>
+          <div class="timeline-content">
+            <h3>بارگذاری عکس اصلی</h3>
+            <p>عکسی که با گوشی گرفتید رو در قالب فایل بارگذاری کنید یا برامون تو تلگرام بفرستید.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-icon" data-step="۴"></div>
+          <div class="timeline-content">
+            <h3>منتظر تماس ما باشید</h3>
+            <p> هوش مصنوعی آلبومی روی عکس شما کار میکنه و ظرف یکی دو روز باهاتون تماس می‌گیریم.</p>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+   <!-- آلبومت رو بساز -->
+<section class="order-steps">
+  <h2>آلبومت رو بساز</h2>
+  
+  <!-- مرحله 1: انتخاب گزینه‌ها -->
+  <div class="step">
+    <h3>۱. انتخاب گزینه‌های ویژه</h3>
+    <div class="options-container">
+      <div class="option">
+        <input type="checkbox" id="option1" class="checkbox" value="گزینه ۱">
+        <label for="option1">
+          <img src="images/s1.png" alt="گزینه ۱">
+          <h3>ترکیبی از عکس‌ها که یه شکل رو میسازه</h3>
+        </label>
+      </div>
+      <div class="option">
+        <input type="checkbox" id="option2" class="checkbox" value="گزینه ۲">
+        <label for="option2">
+          <img src="images/s2.png" alt="گزینه ۲">
+          <h3>یه شکل جذاب از آهنگی که دوست دارید</h3>
+        </label>
+      </div>
+      <div class="option">
+        <input type="checkbox" id="option3" class="checkbox" value="گزینه ۳">
+        <label for="option3">
+          <img src="images/s3.png" alt="گزینه ۳">
+          <h3>عنوان گزینه ۳</h3>
+        </label>
+      </div>
+      <div class="option">
+        <input type="checkbox" id="option4" class="checkbox" value="گزینه ۴">
+        <label for="option4">
+          <img src="images/s4.png" alt="گزینه ۴">
+          <h3>عکس شما تو پس زمینه شخصی سازی شده</h3>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <!-- مرحله 2: توضیحات سفارش -->
+  <div class="step">
+    <h3>۲. توضیحات سفارش خود را وارد کنید</h3>
+    <textarea id="orderDetails" placeholder="مثلا: میخوام ترکیبی از 6 تا عکس خودم و همسرم باشه که به شکل یک درخت خانوادگی دربیاد و زیرش نوشته باشد تا ابد جاودان..."></textarea>
+  </div>
+
+  <!-- مرحله 3: نام کاربر -->
+  <div class="step">
+    <h3>۳. نام و نام خانوادگی خود را وارد کنید</h3>
+    <input type="text" id="customerName" placeholder="مثلا مریم سلیمانی">
+  </div>
+
+  <!-- مرحله 4: شماره موبایل -->
+  <div class="step">
+    <h3>۴. شماره تماس خود را وارد کنید</h3>
+    <input type="tel" id="customerPhone" placeholder="مثلا 09394549391">
+  </div>
+
+  <!-- دکمه ثبت سفارش -->
+  <div class="step">
+    <button onclick="submitOrder()">ثبت سفارش</button>
+  </div>
+  <p>بعد از ثبت سفارش ظرف یکی دو روز باهاتون تماس می‌گیریم و آلبوم دلخواهتون رو میسازیم.</p>
+</section>
+
+
+    <!-- فوتر سایت -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h4>تماس با ما</h4>
+          <p>تلفن: ۰۹۳۹۴۵۴۹۳۹۱</p>
+          <p>ایمیل: <a href="mailto:s.r.mohtasebi@gmail.com">s.r.mohtasebi@gmail.com</a></p>
+          <p>آدرس: تهران، خیابان سنایی، خیابان جواد زاده، پلاک ۳</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>لینک‌های مفید</h4>
+          <ul>
+            <li><a href="about.html">درباره ما</a></li>
+            <li><a href="contact.html">تماس با ما</a></li>
+            <li><a href="faq.html">پرسش‌های متداول</a></li>
+            <li><a href="terms.html">شرایط و قوانین</a></li>
+            <li><a href="privacy.html">حریم خصوصی</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>شبکه‌های اجتماعی</h4>
+          <a href="https://instagram.com">اینستاگرام</a> |
+          <a href="https://telegram.me">تلگرام</a> |
+          <a href="https://wa.me">واتساپ</a>
+        </div>
+      </div>
+      <div class="logo-container" style="text-align: center; margin-top: 20px;">
+        <img src="images/logo.png" alt="Albumi Logo" style="max-width: 150px; height: auto;">
+      </div>
+      <div class="footer-bottom">
+        <p>تمام حقوق محفوظ است. © ۲۰۲۴ [ر+مرت+ضا]</p>
+      </div>
+    </footer>
+  </div>
+  <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>پرسش‌های متداول</title>
+  <link href="https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan.css" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <!-- استفاده از فونت آیکون برای آیکون‌های پرسش‌ها -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- اضافه کردن لوگو -->
+    <div class="logo-container" style="text-align: center; margin-bottom: 20px;">
+      <img src="images/logo.png" alt="Albumi Logo" style="max-width: 200px; height: auto;">
+    </div>
+
+    <!-- ناوبری -->
+    <nav>
+      <ul>
+        <li><a href="index.html">صفحه اصلی</a></li>
+        <li><a href="about.html">داستان ما</a></li>
+        <li><a href="team.html">تیم ما</a></li>
+        <li><a href="faq.html">پرسش‌های متداول</a></li>
+        <li><a href="contact.html">تماس با ما</a></li>
+        <!-- دکمه‌های ورود و ثبت نام -->
+        <button class="login-button" onclick="window.location.href='login.html'">ورود / ثبت نام</button>
+    </nav>
+
+    <!-- بخش پرسش‌های متداول -->
+    <section id="faq" class="faq-section">
+      <h2>پرسش‌های متداول</h2>
+      
+      <div class="faq-item">
+        <button class="faq-question">چگونه می‌توانم عکس‌ها را آپلود کنم؟ <i class="fa fa-chevron-down"></i></button>
+        <div class="faq-answer">
+          <p>شما می‌توانید تا ۳ عکس را از گالری خود انتخاب کنید و آن‌ها را در سایت ما آپلود کنید.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">چقدر زمان می‌برد تا آلبوم من آماده شود؟ <i class="fa fa-chevron-down"></i></button>
+        <div class="faq-answer">
+          <p>معمولاً بین ۳ تا ۵ روز کاری طول می‌کشد تا آلبوم شما آماده شود.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">آیا می‌توانم آلبوم خود را سفارشی‌سازی کنم؟ <i class="fa fa-chevron-down"></i></button>
+        <div class="faq-answer">
+          <p>بله، شما می‌توانید هشتگ و توضیحات مرتبط با عکس‌های خود را اضافه کنید.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <!-- اطلاعات تماس -->
+        <div class="footer-section">
+          <h4>تماس با ما</h4>
+          <p>تلفن: ۰۹۳۹۴۵۴۹۳۹۱</p>
+          <p>ایمیل: <a href="mailto:s.r.mohtasebi@gmail.com">s.r.mohtasebi@gmail.com</a></p>
+          <p>آدرس: تهران، خیابان سنایی، خیابان جواد زاده، پلاک ۳</p>
+        </div>
+    
+        <!-- لینک‌های مفید -->
+        <div class="footer-section">
+          <h4>لینک‌های مفید</h4>
+          <ul>
+            <li><a href="about.html">درباره ما</a></li>
+            <li><a href="contact.html">تماس با ما</a></li>
+            <li><a href="faq.html">پرسش‌های متداول</a></li>
+            <li><a href="terms.html">شرایط و قوانین</a></li>
+            <li><a href="privacy.html">حریم خصوصی</a></li>
+          </ul>
+        </div>
+    
+        <!-- شبکه‌های اجتماعی -->
+        <div class="footer-section">
+          <h4>شبکه‌های اجتماعی</h4>
+          <a href="https://instagram.com">اینستاگرام</a> |
+          <a href="https://telegram.me">تلگرام</a> |
+          <a href="https://wa.me">واتساپ</a>
+        </div>
+      </div>
+      <div class="logo-container" style="text-align: center; margin-top: 20px;">
+        <img src="images/logo.png" alt="Albumi Logo" style="max-width: 150px; height: auto;">
+      </div>
+      <!-- حقوق محفوظ -->
+      <div class="footer-bottom">
+        <p>تمام حقوق محفوظ است. © ۲۰۲۴ [ر+مرت+ضا]</p>
+      </div>
+    
+    
+      
+    </footer>
+  </div>
+
+  <!-- اسکریپت برای مدیریت باز و بسته شدن سوالات -->
+  <script>
+    const faqQuestions = document.querySelectorAll('.faq-question');
+
+    faqQuestions.forEach(question => {
+      question.addEventListener('click', () => {
+        // باز و بسته شدن جواب
+        const answer = question.nextElementSibling;
+        if (answer.style.display === 'block') {
+          answer.style.display = 'none';
+        } else {
+          answer.style.display = 'block';
+        }
+
+        // تغییر آیکون فلش
+        const icon = question.querySelector('i');
+        icon.classList.toggle('fa-chevron-down');
+        icon.classList.toggle('fa-chevron-up');
+      });
+    });
+  </script>
+</body>
+</html>

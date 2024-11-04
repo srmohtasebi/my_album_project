@@ -12,3 +12,4 @@ urlpatterns = [
     path('faq/', views.faq, name='faq'),  # مسیر صفحه سوالات متداول
     path('login/', views.login, name='login'),  # مسیر صفحه ورود
 ]
+

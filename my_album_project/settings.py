@@ -23,7 +23,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-@4bkxfvofr55)0m@^lu1v24z(hqb!_6_9=o2^8!w0t1ltp=n^9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
+
 
 # تنظیم ALLOWED_HOSTS
 ALLOWED_HOSTS = ['albumi.onrender.com', '127.0.0.1', 'localhost']
